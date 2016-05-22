@@ -9,7 +9,14 @@
 
 std::map<uint32_t,int> khist;
 
+#if __APPLE__
 #include <SDL.h>
+#elif __linux__
+#include <SDL/SDL.h>
+#include <bsd/stdlib.h>
+#else
+#error "Unsupported platform"
+#endif
 
 uint64_t ram_size = 0;
 int max_count = 0;

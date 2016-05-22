@@ -31,3 +31,22 @@ Inside the viewer, you can use the following keyboard commands:
 
 You can click on any part of the viewport to display the actual address
 and count.
+
+Building
+--------
+
+On OS X, assuming you have [SDL
+1.2](https://www.libsdl.org/download-1.2.php) installed to
+`/Library/Frameworks/` you should be able to just type `make`.
+
+On Linux it should compile with:
+
+`g++ hilbert.cpp -o hilbert -lSDL -lbsd`
+
+On Windows, you're on your own.
+
+Bugs
+----
+
+The screen starts off blank until you use the arrow keys or press "r" to
+move. I have no idea why and very little interest in figuring it out.

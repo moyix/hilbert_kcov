@@ -1,5 +1,9 @@
 SDL-based hilbert curve visualizer for kernel coverage data.
 
+It looks like this:
+
+![Hilbert Curve of kernel coverage](demo.png)
+
 Input is a file with lines like:
 
     0x80124415  34
